@@ -1,17 +1,12 @@
 import React from 'react';
 
-function Exhibit({ publicIP, latency }) {
+function Exhibit({ title, children }) {
   return (
     <div className="exhibit">
-      <h2>Networking Information</h2>
-      <div className="exhibit-content">
-        <p><strong>Public IP:</strong> {publicIP}</p>
-        <p><strong>Latency Metrics:</strong> {latency}</p>
-      </div>
+      <h2>{title}</h2>
+      <div className="exhibit-content">{children}</div>
     </div>
   );
 }
 
 export default Exhibit;
-
-
